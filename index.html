@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Weather Board</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/style.css">
+        
+    </head>
+    <body>
+          <h1 class="display-3"><strong>Weather Dashboard</strong></h1>  
+        </header>
+          
+       
+       <main class="main">
+        <div id="container" class="row">
+            <h2 class="pt-1"><strong>Search for a City:</strong></h2>
+                  <form class="input-group">  
+                  <input id="searchbar" type="text" class="form-control" aria-label="City Search" aria-describedby="searchbutton">
+
+                    <button id="searchbtn">Search</i></button>
+                  </form>
+                </div>
+        <!--city history-->
+            <div>
+                <button id="clear-history" class="btn btn-primary" type="button">Clear Search History</button>
+            </div>
+                     <ul class="list-group"></ul>
+        </div>
+            
+        <!-- display city and weather -->
+          <div id="citydisplay" class="col-8">
+            <div class="card">
+                <div class="cardbody">
+                  <h2 class="cardtitle" style="height: 60px">
+                    <span id="cityName">City Name: </span>
+                    <img class="weather-icon" id="weather-icon-current" src="">
+                    </img>
+                  </h2>
+                    Temperature: 
+                    <span id="ctemp">--</span>
+                  </p>
+                    Humidity: 
+                    <span id="chumid">--</span>
+                  </p>
+                    Wind Speed: 
+                    <span id="cwind">--</span>
+                  </p>
+                
+                </div>
+              </div>
+        </div>  
+        <!--the forecast, five days ahead.-->
+            <section id="fiveday" class="row"> 
+              <div class="row">
+                <h2>Five-Day Forecast</h2>
+              </div>
+              <div id="forecastcon" class="row">
+              </div>
+            </section>
+    
+        </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/script.js"></script>
+    </body>
+</html>
